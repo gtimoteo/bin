@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#start apache server
+
+sudo apachectl start

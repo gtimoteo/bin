@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#stop apache server
+
+sudo apachectl stop

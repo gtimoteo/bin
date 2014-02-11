@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# open textwrangler and open a file
+
+FILE=$1
+
+if [ -f "$FILE" ]
+then
+    open -a /Applications/TextWrangler.app/ "$FILE"
+else
+    edit "$FILE"
+fi
