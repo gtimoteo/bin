@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#copy .bash_profile to user home directory
+
+cp -i .bash_profile ~/.bash_profile
+
