@@ -1,5 +1,8 @@
 #!/bin/bash
 
-git remote add origin https://github.com/gtimoteo/bin.git
+git add .
+read -p "Commit Description: " DESC
+git commit -m "$DESC"
+git push origin master
 
 
