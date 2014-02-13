@@ -4,9 +4,14 @@
 
 FILE=$1
 
-if [ -f "$FILE" ]
+if [[ -z "$FILE" ]]
 then
-    open -a /Applications/TextWrangler.app/ "$FILE"
+	open -a /Applications/TextWrangler.app/ 
 else
-    edit "$FILE"
+	if [ -f "$FILE" ]
+	then
+    	open -a /Applications/TextWrangler.app/ "$FILE"
+	else
+    	edit "$FILE"
+	fi
 fi
