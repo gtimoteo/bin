@@ -1,0 +1,11 @@
+#!/bin/bash
+
+PARAM=$1
+
+case "$PARAM" in
+	lod_en) ssh -i ~/.ssh/id_rsa project@master.en.lods.klabgames.net;;
+	lod_ja) ssh -i ~/.ssh/id_rsa project@master.ja.lods.klabgames.net;;
+	shard_en) ssh -i ~/.ssh/id_rsa.shard project@master.en.lods.klabgames.net;;
+	shard_ja) ssh -i ~/.ssh/id_rsa.shard project@master.en.lods.klabgames.netecho shard_ja;;
+	*) echo "Invalid argument. \n (lod_en, lod_ja, shard_en, shard_ja)";
+esac
